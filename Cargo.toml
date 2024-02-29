@@ -1,0 +1,12 @@
+[package]
+name = "virto-proxy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.77"
+pingora = { version = "0.1.0", features = ["proxy"] }
+pingora-proxy = "0.1.0"
+structopt = "0.3.26"
