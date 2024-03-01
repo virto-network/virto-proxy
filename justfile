@@ -5,6 +5,9 @@ image := "ghcr.io/virto-network/virto-proxy"
 @default:
 	just --list
 
+@version:
+	echo {{ ver }}
+
 build-container:
 	#!/usr/bin/env nu
 	'FROM rust:1.75 as builder
